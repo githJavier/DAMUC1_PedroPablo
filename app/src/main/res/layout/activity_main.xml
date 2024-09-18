@@ -5,17 +5,19 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="123dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
         android:text="Registrarte"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <!-- Descripción -->
     <TextView
@@ -34,6 +36,7 @@
         android:layout_height="49dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
+        android:backgroundTint="#D3D3D3"
         android:hint="Nombre"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/description" />
@@ -44,6 +47,7 @@
         android:layout_height="49dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="16dp"
+        android:backgroundTint="#D3D3D3"
         android:hint="Apellido"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/description" />
@@ -55,6 +59,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="16dp"
+        android:backgroundTint="#D3D3D3"
         android:ems="10"
         android:hint="Correo Electrónico"
         android:inputType="textEmailAddress"
@@ -70,6 +75,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="16dp"
+        android:backgroundTint="#D3D3D3"
         android:ems="10"
         android:hint="Contraseña Nueva"
         android:inputType="textPassword"
@@ -134,10 +140,11 @@
         android:id="@+id/female"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:text="Mujer"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
-        tools:layout_editor_absoluteX="15dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <RadioButton
         android:id="@+id/male"
@@ -165,11 +172,12 @@
         android:layout_width="198dp"
         android:layout_height="55dp"
         android:layout_marginTop="44dp"
+        android:backgroundTint="#4267B2"
         android:text="Button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/male" />
-
+        
 
 </androidx.constraintlayout.widget.ConstraintLayout>
